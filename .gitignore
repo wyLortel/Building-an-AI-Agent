@@ -1,0 +1,47 @@
+# 리포지토리 전역 규칙 — 하위 프로젝트 전부에 적용됩니다.
+
+# ---------- Dependencies ----------
+# 앞에 슬래시가 없으므로 깊이에 상관없이 모든 node_modules 디렉터리에 적용됩니다.
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ---------- Build output ----------
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Logs / Cache ----------
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.cache/
+.npm
+.eslintcache
+coverage/
+
+# ---------- Editor / OS ----------
+.DS_Store
+._*
+Thumbs.db
+.idea/
+*.swp
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json

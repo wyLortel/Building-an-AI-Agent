@@ -1,0 +1,17 @@
+{
+  "type": "function",
+  "function": {
+    "name": "calculate",
+    "description": "산술을 계산합니다. 예) '17 * 23'",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "expression": {
+          "type": "string",
+          "description": "계산할 수식"
+        }
+      },
+      "required": ["expression"]
+    }
+  }
+}
