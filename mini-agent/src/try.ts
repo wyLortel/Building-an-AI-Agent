@@ -38,3 +38,6 @@ messages.push({ role: 'tool', content: result, tool_name: call.function.name });
 // console.log(reply.content);
 // console.log(JSON.stringify(reply, null, 2));
 // reply.tool_calls[0].function.arguments.expression
+
+const final = await chat(messages, [calculateSchema]);
+console.log(final);
