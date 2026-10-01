@@ -45,3 +45,7 @@ Thumbs.db
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/launch.json
+
+# Python
+.venv/
+__pycache__/
